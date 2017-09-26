@@ -1,17 +1,24 @@
 <html>
 <head>
 <link rel='stylesheet' type='text/css' href='interface.css' />
+<title>Infinity Incremental</title>
 </head>
 <body>
-<button type='button'; id='pointButton'; onClick='pointClick()'>Create a Point</button>
+  <div>
+    <button type='button'; class='dimButtonHidden'; id='prevDimButton'>???</button>
+    <button type='button'; class='dimButton'; id='currDimButton'>Current Dimension</button>
+    <button type='button'; class='dimButtonHidden'; id='nextDimButton'>???</button>
+  </div>
+<button type='button'; class='genButton'; id='pointButton'; onClick='pointClick()'>Create a Point</button>
  Points: <span id ='pointAmount'>0</span><br />
-<button type='button'; id='pointMakerButton'; onClick='buyPointMaker()'>Buy Point Maker</button>
+<button type='button'; class='BuyButton'; id='pointMakerButton'; onClick='buyPointMaker()'>Buy Point Maker</button>
  Point Makers: <span id='pointMakerAmount'>0</span>
  Cost: <span id='pointMakerCost'>10</span><br />
-<button type='button'; id='dotMakerButton'; onClick='buyDotMaker()'>Buy Dot Maker</button>
+<button type='button'; class='BuyButton'; id='dotMakerButton'; onClick='buyDotMaker()'>Buy Dot Maker</button>
  Dot Makers: <span id='dotMakerAmount'>0</span>
  Cost: <span id='dotMakerCost'>100</span>
 <script type='text/javascript' src='main.js'></script>
+<script type='text/javascript' src='upgrades.js'></script>
 <div id='upgradeBox'>
 </div
 </body>
